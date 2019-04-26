@@ -249,7 +249,7 @@ public final class Main extends Application {
                 bits.add(text);
             }
             // 2017-04-24 JDK 8/9 Bug ?
-            // Parfois, lors d'une modification (pas de soucis avec ajout ou retrait), le rafraichissement s'arrete si on ne fini pas par un Text supplementaire.
+            // Parfois, lors d'une modification (pas de soucis avec ajout ou retrait), le rafraichissement s'arrete si on ne finit pas par un Text supplementaire.
             // Les appels de methode et la construction du TextFlow sont pourtant corrects.
             // Mais l'ecran affiche toujours les anciennes chaines.
             bits.add(new Text("\n")); // NOI18N.
